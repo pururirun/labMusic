@@ -142,6 +142,10 @@ html{
     width: 3em;
 }
 
+.listening h2{
+    padding-left: 2.3em;
+}
+
 .textSong{
     color: white;
     margin-left: 1em;
@@ -155,6 +159,10 @@ html{
   color: red;
 }
 
+.moreSong{
+    padding-left: 82em;
+}
+
 /*Fin canciones recientes*/
 
 /*artistas*/
@@ -163,9 +171,17 @@ html{
     padding-left: 5em;
 }
 
+.artist h2{
+    padding-left: 0.5em;
+}
+
 .artist img{
     width: 10em;
     margin-top: 1em;
+}
+
+.moreArtist{
+  padding-left: 36.7em;
 }
 
 /*Discos*/
@@ -174,12 +190,21 @@ html{
     padding-left: 5em;
 }
 
+.disc h2{
+    padding-left: 0.5em;
+}
+
 .disc img{
     width: 10em;
     margin-top: 1em;
 }
 
+
 /*css listplay*/
 .listening{
   cursor: pointer;
+
+.moreDisc{
+    padding-left: 37.3em;
+
 }
