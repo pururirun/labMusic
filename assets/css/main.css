@@ -1,29 +1,32 @@
+
 /*.joinHeader{
   display: none;
 }*/
+
 .userImg{
-  width: 2.3em;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  margin-top: 0.5em;
+    width: 2.3em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 0.5em;
 }
 
 .userBtn{
-  border: none;
-  background-color: transparent !important;
+    border: none;
+    background-color: transparent !important;
 }
 
 .dropdown-menu{
-  background-color: #313131;
+    background-color: #313131;
 }
 
 .dropdown li a {
-  color: white;
+    color: white;
 }
 
+
 /* USER PROFILE PAGE */
- 
+
 
 body{
     background-color: #241A1A;
