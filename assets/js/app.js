@@ -22,5 +22,16 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
 
 });
 
+$(".btn-enter-user").click(function(){
+  $('#modalLogin').modal('toggle'); 
+  $(".joinHeader").toggleClass("hidden");
+  $(".carousel-hidden").toggleClass("hidden");
+  $(".concert").toggleClass("hidden");
+  $(".userHeader").toggleClass("hidden");
+  $(".backgroundUser").toggleClass("hidden");
+  $(".artist").toggleClass("hidden");
+  $(".disc").toggleClass("hidden");
+
+});
 
 });
