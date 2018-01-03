@@ -18,8 +18,6 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
 
 };
 
-
-
 });
 
 $(".btn-enter-user").click(function(){
@@ -31,6 +29,15 @@ $(".btn-enter-user").click(function(){
   $(".backgroundUser").toggleClass("hidden");
   $(".artist").toggleClass("hidden");
   $(".disc").toggleClass("hidden");
+  $(".listening").toggleClass("hidden");
+  var name= $("#name-user-input").val();
+  $("#name-user").html(name);
+  $("#user-name-perfil").html(name);
+
+});
+$(".heart").click(function(){
+  $(this).toggleClass("red-toggle");
+
 
 });
 

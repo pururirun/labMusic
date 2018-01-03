@@ -149,7 +149,10 @@ html{
 
 .heart{
     margin-left: 1em;
-    color: #c92c2c;
+    color: white;
+}
+.red-toggle{
+  color: red;
 }
 
 /*Fin canciones recientes*/
@@ -174,4 +177,9 @@ html{
 .disc img{
     width: 10em;
     margin-top: 1em;
+}
+
+/*css listplay*/
+.listening{
+  cursor: pointer;
 }

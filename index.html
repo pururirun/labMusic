@@ -132,7 +132,7 @@
                 <span><img class="userImg" src="assets/images/raccoon.jpg"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Nombre de usuario</a></li>
+                <li><a id="name-user" href="#">Nombre de usuario</a></li>
                 <li><a href="#">Notificaciones</a></li>
                 <li><a href="#">Configuración</a></li>
                 <li><a href="#">Salir</a></li>
@@ -156,32 +156,29 @@
               <img class="userImage" src="assets/images/raccoon.jpg" alt="">
             </div>
             <div class="userText col-lg-4">
-                <h1>Rocky Raccoon</h1>
+                <h1 id="user-name-perfil">Rocky Raccoon</h1>
                 <p>Santiago, Chile</p>
             </div>
         </div>
       </div>
   </div>
 
-
-
-
 <!--Fin usuario-->
 
 <!--canciones recientes-->
-    <div class="listening row">
+    <div class="listening hidden row">
       <div class="error-notice">
           <div class="oaerror danger">
-            <span><img src="assets/images/credence.png"></span><span class="heart glyphicon glyphicon-heart"></span><span class="textSong">Creedence Clearwater Revival — Lookin' Out My Back Door</span>
+            <span><img src="assets/images/credence.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/Aae_RHRptRg" target="_blank"><span class="textSong">Creedence Clearwater Revival — Lookin' Out My Back Door</span></a>
           </div>
           <div class="oaerror warning">
-            <span><img src="assets/images/scott.jpg"></span><span class="heart glyphicon glyphicon-heart"></span><span class="textSong">Scott Walker — The Old Man's Back Again</span>
+            <span><img src="assets/images/scott.jpg"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/N-zgdGQB4S4" target="_blank"><span class="textSong">Scott Walker — The Old Man's Back Again</span></a>
           </div>
           <div class="oaerror info">
-            <span><img src="assets/images/discopenguin.png"></span><span class="heart glyphicon glyphicon-heart"></span><span class="textSong">Penguin Cafe Orchestra — Penguin Cafe Single</span>
+            <span><img src="assets/images/discopenguin.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://www.youtube.com/watch?v=PR3WQ6GwQrM" target="_blank"><span class="textSong">Penguin Cafe Orchestra — Penguin Cafe Single</span></a>
           </div>
           <div class="oaerror success">
-            <span><img src="assets/images/cream.png"></span><span class="heart glyphicon glyphicon-heart"></span><span class="textSong">Cream — White Room</span>
+            <span><img src="assets/images/cream.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/pkae0-TgrRU"><span class="textSong">Cream — White Room</span></a>
           </div>
       </div>
     </div>
@@ -307,7 +304,7 @@
               <h1>Únete a Labmusic</h1>
               <div class="form-group">
                 <label for="exampleInputEmail1">Nombre de usuario</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                <input type="email" class="form-control" placeholder="Username">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Correo electrónico</label>
@@ -340,7 +337,7 @@
               <h1>Entrar</h1>
               <div class="form-group">
                 <label for="exampleInputEmail1">Nombre de usuario</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                <input type="email" class="form-control" id="name-user-input" placeholder="Username">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Contraseña</label>
