@@ -165,6 +165,12 @@ html{
 
 /*Fin canciones recientes*/
 
+/*Opacidad img artist disc*/
+
+img.opacityImg:hover{
+  opacity: 0.6;
+}
+
 /*artistas*/
 
 .artist{
@@ -177,11 +183,11 @@ html{
 
 .artist img{
     width: 10em;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .moreArtist{
-  padding-left: 36.7em;
+  padding-left: 35.8em;
 }
 
 /*Discos*/
@@ -199,12 +205,24 @@ html{
     margin-top: 1em;
 }
 
-
-/*css listplay*/
-.listening{
-  cursor: pointer;
-
 .moreDisc{
-    padding-left: 37.3em;
+    padding-left: 36em;
 
 }
+
+/*lista de amigos*/
+.friend img{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 2em;
+}
+
+.playIcon{
+    margin-left: 1em;
+}
+
+/*css listplay*/
+
+.listening{
+  cursor: pointer;
