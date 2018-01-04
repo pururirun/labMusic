@@ -54,7 +54,7 @@ function ingreso(){
   var errorMessage = error.message;
 
 
- 
+
 });
 };
 
@@ -63,8 +63,8 @@ function out(){
   firebase.auth().signOut().then(function(){
     console.log("saliendo..")
     $(document).ready(function(){
-   
-  $('#modalLogin').modal('toggle'); 
+
+  $('#modalLogin').modal('toggle');
   $(".post-music").toggleClass("hidden");
   $(".joinHeader").toggleClass("hidden");
   $(".carousel-hidden").toggleClass("hidden");
@@ -95,13 +95,13 @@ function observador(){
   firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     console.log("existe usuario activo");
-    // User is signed in.  
+    // User is signed in.
     var user= user;
   if(user.emailVerified){
-  
- 
+
+
   $('#modalLogin').modal('toggle');
-  $(".post-music").toggleClass("hidden"); 
+  $(".post-music").toggleClass("hidden");
   $(".joinHeader").toggleClass("hidden");
   $(".carousel-hidden").toggleClass("hidden");
   $(".concert").toggleClass("hidden");
@@ -130,7 +130,7 @@ $(".heart").click(function(){
   } else {
     // User is signed out.
     // ...
-    // 
+    //
     console.log("No existe usuario activo");
   }
 });
@@ -147,7 +147,7 @@ observador();
 
 $(document).ready(function(){
 
- 
+
  for(i=0; i<concertData.length;i++){
   $(".row-concert").append("<div class='col-lg-3'><div class='thumbnail modal-click'>"+concertData[i].photo+"<div class='caption'><h3>"+concertData[i].name+"</h3><p>"+concertData[i].date+"</p><p></p></div></div></div>");
  }
@@ -161,7 +161,7 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
       $(".modal-bodys").empty();
       $(".modal-titles").html(concertData[i].name); // agregamos el nuevo nombre
       $(".modal-bodys").append(concertData[i].photo+"<h4>Lugar :"+concertData[i].place+"</h4>");
-     
+
     };
 
 };
@@ -190,12 +190,38 @@ function savePin(){
 
   $("#pines").append("<div class='pin col-lg-6 col-lg-offset-3'><img class='user-comment' src='assets/images/raccoon.jpg'><h2 class='name-comment'>"+name+"</h2><h4 class='hour-comment'>"+new Date().toLocaleTimeString()+"</h4><p>"+descripcion+"<a href='#' class='thumbnail'><img src='"+url+"'></a></p><span class='fa fa-heart heart2'></span><span class='fa fa-trash'></span></div>")
     //este es el frente
+
   $(".heart2").click(function(){
   $(this).toggleClass("red-toggle");
-}); 
+});
    $(".fa-trash").click(function(){
   $(this).parent().remove();
-}); 
+});
 
 };
-  
+
+
+    "<div class='panel panel-success front'>" +
+    "<div class='panel-heading'>" +
+    "<h3 class='panel-title'>" + titulo + "</h3>" +
+    "</div>"+
+    "<div class= 'panel-body'>" +
+    "<a href='#' class='thumbnail'>" +
+    "<img src='" + url + "' alt='...'>" +
+    "</a>" +
+    "</div>" +
+    "<div class ='panel-footer'>" + descripcion + "</div> </div>" +
+    //este es el panel de atras
+    "<div class='rear'>"+
+    "</div>" +
+    "</div>");
+
+}
+
+//Splash
+
+$(function(){
+   setTimeout(function() {
+      $('#splash').fadeOut(100);
+   }, 3000);
+});

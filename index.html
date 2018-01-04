@@ -116,15 +116,72 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-
     </div>
   </div>
+
+<!--Amigooos------------------------------->
+
+<div class="row">
+      <div class="col-lg-12">
+          <div class="col-lg-6">
+              <h2>Amigos</h2>
+              <div class="media friend1">
+                  <a class="pull-left" href="#">
+                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
+                  </a>
+                  <div class="media-body">
+                      <h4 class="media-heading">Juan Perez <br><small>Chile</small></h4>
+                      <hr style="margin:8px auto">
+                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
+                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
+                  </div>
+              </div>
+              <div class="media friend2">
+                  <a class="pull-left" href="#">
+                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
+                  </a>
+                  <div class="media-body">
+                      <h4 class="media-heading">Pepito<br><small>Chile</small></h4>
+                      <hr style="margin:8px auto">
+                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
+                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <h2>Sugerencias</h2>
+              <div class="media friend3">
+                  <a class="pull-left" href="#">
+                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
+                  </a>
+                  <div class="media-body">
+                      <h4 class="media-heading">Froppy<br><small>Chile</small></h4>
+                      <hr style="margin:8px auto">
+                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
+                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
+                  </div>
+              </div>
+              <div class="media friend4">
+                  <a class="pull-left" href="#">
+                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
+                  </a>
+                  <div class="media-body">
+                      <h4 class="media-heading">Meh<br><small>Chile</small></h4>
+                      <hr style="margin:8px auto">
+                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
+                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+<!------------------------------------------>
 
 <!--header visto por el usuario-->
 <header class="userHeader hidden">
   <nav class="navbar navbar-inverse no-margin">
     <div class="container">
-      <div class="navbar-header">
+      <div class="navbar-header  hidden-xs">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed btn-hamburger" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -137,7 +194,7 @@
           <img class="img-logo" alt="Brand" src="assets/images/logoForma.png">
         </a>
       </div>
-      <div class="container">
+      <div class="container hidden-xs">
        <div id="navbar" class="navbar-collapse collapse  navbar-right nav-top">
           <ul class="nav navbar-nav">
             <li><a class="btn" data-toggle="modal">Inicio</a></li>
@@ -147,8 +204,13 @@
               <button class=" userBtn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 <span><img class="userImg" src="assets/images/raccoon.jpg"></span>
               </button>
+
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <li><a id="name-user1" href="#">Nombre de usuario</a></li>
+
+              <ul class="dropdown-menu collapse " aria-labelledby="dropdownMenu1">
+                <li><a id="name-user" href="#">Nombre de usuario</a></li>
+
                 <li><a href="#">Notificaciones</a></li>
                 <li><a href="#">Configuración</a></li>
                 <li><a onclick="out()" href="#">Salir</a></li>
@@ -157,30 +219,53 @@
           </ul>
        </div>
      </div>
+     <div class="phoneMenu dropdown hidden-lg">
+       <button class=" userBtn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         <span><img class="userImg" src="assets/images/raccoon.jpg"></span>
+       </button>
+       <ul class="dropdown-menu collapse " aria-labelledby="dropdownMenu1">
+         <li><a id="name-user" href="#">Nombre de usuario</a></li>
+         <li><a href="#">Notificaciones</a></li>
+         <li><a href="#">Configuración</a></li>
+         <li><a onclick="out()" href="#">Salir</a></li>
+       </ul>
+     </div>
     </div>
   </nav>
 </header>
 <!--Fin header-visto-por-el-usuario-->
 
-
 <!--perfil usuario-->
 
   <div class="backgroundUser hidden">
       <div class="row">
-        <div class="col-lg-12">
-            <div class="col-md-offset-1 col-lg-4">
+        <div class="col-lg-12 col-xs-12">
+            <div class="col-md-offset-1 col-lg-4 col-xs-12">
               <img class="userImage" src="assets/images/raccoon.jpg" alt="">
             </div>
-            <div class="userText col-lg-4">
+            <div class="userText col-lg-4 col-xs-12">
                 <h1 id="user-name-perfil">Rocky Raccoon</h1>
                 <p>Santiago, Chile</p>
             </div>
         </div>
       </div>
   </div>
-  
+
 
 <!--Fin usuario-->
+
+<!--likes-->
+<div class="row">
+  <div class="col-lg-12">
+      <p class="col-md-offset-3 col-lg-1 col-xs-3"><a href="#">Canciones</a><br><strong>2,590</strong></p>
+      <p class="col-lg-1 col-xs-3"><a href="#">Artistas</a><br><strong>150</strong></p>
+      <p class="col-lg-1 col-xs-3"><a href="#">Favoritos</a><br><strong>23</strong></p>
+      <p class="col-lg-1 col-xs-3"><a href="#">Amigos</a><br><strong>2</strong></p>
+  </div>
+</div>
+
+<!--Amigos y sugerencias-->
+
 
 <!--canciones recientes-->
 
@@ -190,16 +275,16 @@
 
       <div class="error-notice">
           <div class="oaerror danger">
-            <span><img src="assets/images/credence.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/Aae_RHRptRg" target="_blank"><span class="textSong">Creedence Clearwater Revival — Lookin' Out My Back Door</span></a>
+            <span><img src="assets/images/credence.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/Aae_RHRptRg" target="_blank"><span class="textSong"><span class="hidden-xs">Creedence Clearwater Revival —</span> Lookin' Out My Back Door</span></a>
           </div>
           <div class="oaerror warning">
-            <span><img src="assets/images/scott.jpg"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/N-zgdGQB4S4" target="_blank"><span class="textSong">Scott Walker — The Old Man's Back Again</span></a>
+            <span><img src="assets/images/scott.jpg"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/N-zgdGQB4S4" target="_blank"><span class="textSong"><span class="hidden-xs">Scott Walker —</span> The Old Man's Back</span></a>
           </div>
           <div class="oaerror info">
-            <span><img src="assets/images/discopenguin.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://www.youtube.com/watch?v=PR3WQ6GwQrM" target="_blank"><span class="textSong">Penguin Cafe Orchestra — Penguin Cafe Single</span></a>
+            <span><img src="assets/images/discopenguin.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://www.youtube.com/watch?v=PR3WQ6GwQrM" target="_blank"><span class="textSong"><span class="hidden-xs">Penguin Cafe Orchestra —</span> Penguin Cafe Single</span></a>
           </div>
           <div class="oaerror success">
-            <span><img src="assets/images/cream.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/pkae0-TgrRU"><span class="textSong">Cream — White Room</span></a>
+            <span><img src="assets/images/cream.png"></span><span class="heart glyphicon glyphicon-heart"></span><a href="https://youtu.be/pkae0-TgrRU"><span class="textSong"><span class="hidden-xs">Cream —</span> White Room</span></a>
           </div>
           <p class="moreSong"><a href="#">Más canciones</a></p>
       </div>
@@ -230,37 +315,36 @@
 
     <div class="artist hidden row">
       <div class="col-lg-12 col-xs-12">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-xs-12">
           <h2>Artistas</h2>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/neutralmilk.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/queenof.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/isis.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/penguin.jpg">
             </a>
           </div>
         </div>
 <!--Lista de amigos-->
-        <div class="row whitebox">
-          <div class="col-lg-6">
+        <div class="row friendList">
+          <div class="col-lg-6 hidden-xs">
             <h2>Amigos</h2>
             <ul class="friend list-group">
-              <li class="list-group-item"><span><img src="assets/images/raccoon.jpg"><strong><a href="#">rockyraccoon</a></strong><span class="playIcon glyphicon glyphicon-play"></span>Scott Walker — The Old Man's Back Again</span></li>
-              <li class="list-group-item"><span><img src="assets/images/raccoon.jpg"><strong><a href="#">rockyraccoon</a></strong><span class="playIcon glyphicon glyphicon-play"></span>Scott Walker — The Old Man's Back Again</span></li>
-              <li class="list-group-item"><span><img src="assets/images/raccoon.jpg"><strong><a href="#">rockyraccoon</a></strong><span class="playIcon glyphicon glyphicon-play"></span>Scott Walker — The Old Man's Back Again</span></li>
+              <li class="list-group-item"><span><img src="assets/images/raccoon.jpg"><strong><a class="friendName"href="#">rockyraccoon</a></strong><span class="playIcon glyphicon glyphicon-play"></span>Scott Walker — The Old Man's Back Again</span></li>
+              <li class="list-group-item"><span><img src="assets/images/raccoon.jpg"><strong><a class="friendName"href="#">rockyraccoon</a></strong><span class="playIcon glyphicon glyphicon-play"></span>Scott Walker — The Old Man's Back Again</span></li>
             </ul>
           </div>
         </div>
@@ -269,24 +353,24 @@
       </div>
     </div>
     <div class="artist hidden row">
-      <div class="col-lg-12 col-xs-12">
-      <div class="col-lg-6">
-        <div class="col-lg-3">
+      <div class="col-lg-12 col-xs-12 hidden-xs">
+      <div class="col-lg-6 col-xs-12">
+        <div class="col-lg-3 col-xs-6">
           <a href="#">
             <img class="opacityImg" src="assets/images/wolfalice.jpg">
           </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-xs-6">
           <a href="#">
             <img class="opacityImg" src="assets/images/elmato.jpg">
           </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-xs-6">
           <a href="#">
             <img class="opacityImg" src="assets/images/arielpink.jpg">
           </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-xs-6">
           <a href="#">
             <img class="opacityImg" src="assets/images/mastodon.jpg">
           </a>
@@ -302,24 +386,24 @@
 
     <div class="disc hidden row">
       <div class="col-lg-12 col-xs-12">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-xs-12">
           <h2>Discos</h2>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/discopenguin.png">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/disc2.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/disc3.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/disc4.jpg">
             </a>
@@ -327,25 +411,25 @@
         </div>
       </div>
     </div>
-    <div class="artist hidden row">
-      <div class="col-lg-12 col-xs-12">
-        <div class="col-lg-6">
-          <div class="col-lg-3">
+    <div class="disc hidden row">
+      <div class="col-lg-12 col-xs-12 hidden-xs">
+        <div class="col-lg-6 col-xs-12">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/disc5.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/disc6.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/disc7.jpg">
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-xs-6">
             <a href="#">
               <img class="opacityImg" src="assets/images/disc8.jpg">
             </a>
@@ -430,11 +514,16 @@
     </div>
 <!--Fin  Modal-ingresar-->
 
+<!--splash-->
+   <div id="splash">
+      <h2>LabMusic <span class="glyphicon glyphicon-headphones"></span></h2>
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/data.js"></script>
-    
+
   </body>
 </html>
