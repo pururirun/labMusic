@@ -74,7 +74,7 @@ function out(){
   $(".artist").toggleClass("hidden");
   $(".disc").toggleClass("hidden");
   $(".listening").toggleClass("hidden");
-  var name= $(".name-user-input").val();
+  var name= $("#name-user").val();
   $("#name-user").html(name);
   $("#user-name-perfil").html(name);
 
@@ -110,8 +110,8 @@ function observador(){
   $(".artist").toggleClass("hidden");
   $(".disc").toggleClass("hidden");
   $(".listening").toggleClass("hidden");
-  var name= $(".name-user-input").val();
-  $("#name-user").html(name);
+  var name= $("#name-user").val();
+  $("#name-user1").html(name);
   $("#user-name-perfil").html(name);
 
 $(".heart").click(function(){
@@ -181,22 +181,21 @@ function savePin(){
   var titulo = $("#tituloInput").val();
   var descripcion = $("#descripcionInput").val();
   var url = $("#urlInput").val();
+  var name= $("#name-user").val();
+  $("#descripcionInput").val("");
+  $("#urlInput").val("");
+  $("#name-user").val("");
 
-  $("#pines").append("<div id='pin_" + idPin + "' class='pin col-lg-6 col-lg-offset-3'>" +
+
+
+  $("#pines").append("<div class='pin col-lg-6 col-lg-offset-3'><img class='user-comment' src='assets/images/raccoon.jpg'><h2 class='name-comment'>"+name+"</h2><h4 class='hour-comment'>"+new Date().toLocaleTimeString()+"</h4><p>"+descripcion+"<a href='#' class='thumbnail'><img src='"+url+"'></a></p><span class='fa fa-heart heart2'></span><span class='fa fa-trash'></span></div>")
     //este es el frente
-    "<div class='panel panel-success front'>" +
-    "<div class='panel-heading'>" +
-    "<h3 class='panel-title'>" + titulo + "</h3>" +
-    "</div>"+
-    "<div class= 'panel-body'>" +
-    "<a href='#' class='thumbnail'>" +
-    "<img src='" + url + "' alt='...'>" +
-    "</a>" +
-    "</div>" +
-    "<div class ='panel-footer'>" + descripcion + "</div> </div>" + 
-    //este es el panel de atras
-    "<div class='rear'>"+
-    "</div>" +
-    "</div>");
+  $(".heart2").click(function(){
+  $(this).toggleClass("red-toggle");
+}); 
+   $(".fa-trash").click(function(){
+  $(this).parent().remove();
+}); 
 
-}
+};
+  

@@ -30,6 +30,7 @@
 
 body{
     background-color: #241A1A;
+    font-family: 'Montserrat', sans-serif;
 }
 html{
   overflow-x: hidden;
@@ -226,3 +227,37 @@ img.opacityImg:hover{
 
 .listening{
   cursor: pointer;
+}
+/* formulario de comentarios*/
+.form-comment{
+  background-color: grey;
+  padding:1em;
+
+}
+.input-group{
+  width: 100%;
+}
+.pin{
+  background-color: white;
+  margin-top: 2em;
+}
+.heart2{
+  padding-right: 1em;
+}
+.fa{
+  font-size: 1.5em;
+}
+.user-comment{
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border:1px solid white;
+  display: inline-block;
+}
+.hour-comment{
+  display: inline-block;
+}
+.name-comment{
+  display: inline-block;
+  padding-right: 7em;
+}
