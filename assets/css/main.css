@@ -3,7 +3,7 @@ h1, h3, p{
 }
 
 h2, a{
-  color: #7e4958;
+    color: #7e4958;
 }
 
 .userImg{
@@ -37,11 +37,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 html{
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .carousel-indicators{
-  z-index: -5;
+    z-index: -5;
 
 }
 
@@ -49,17 +49,17 @@ html{
     height: 57vh;
 }
 .concert{
-  padding:2vh;
+    padding:2vh;
 }
 .btn-change{
-  background-color: black;
+    background-color: black;
 }
 .btn-change:hover{
-  background-color: grey;
+    background-color: grey;
 }
 .modal-click:hover{
-  background-color: grey;
-  cursor: pointer;
+    background-color: grey;
+    cursor: pointer;
 }
 .img-logo{
     width: 5%;
@@ -95,62 +95,62 @@ html{
 }
 
 p{
-  text-align: center;
+    text-align: center;
 }
 
 /*canciones recientes*/
 
 .error-notice {
-  margin: 5px 5px; /* Making sure to keep some distance from all side */
+    margin: 5px 5px; /* Making sure to keep some distance from all side */
 }
 
 .oaerror {
-  width: 90%; /* Configure it fit in your design  */
-  margin: 0 auto; /* Centering Stuff */
-  background-color: #FFFFFF; /* Default background */
-  padding: 20px;
-  border: 1px solid #eee;
-  border-left-width: 5px;
-  border-radius: 3px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+    width: 90%; /* Configure it fit in your design  */
+    margin: 0 auto; /* Centering Stuff */
+    background-color: #FFFFFF; /* Default background */
+    padding: 20px;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .danger {
-  border-left-color: #d9534f; /* Left side border color */
-  background-color: rgba(217, 83, 79, 0.1); /* Same color as the left border with reduced alpha to 0.1 */
+    border-left-color: #d9534f; /* Left side border color */
+    background-color: rgba(217, 83, 79, 0.1); /* Same color as the left border with reduced alpha to 0.1 */
 }
 
 .danger strong {
-  color:  #d9534f;
+    color:  #d9534f;
 }
 
 .warning {
-  border-left-color: #f0ad4e;
-  background-color: rgba(240, 173, 78, 0.1);
+    border-left-color: #f0ad4e;
+    background-color: rgba(240, 173, 78, 0.1);
 }
 
 .warning strong {
-  color: #f0ad4e;
+    color: #f0ad4e;
 }
 
 .info {
-  border-left-color: #5bc0de;
-  background-color: rgba(91, 192, 222, 0.1);
+    border-left-color: #5bc0de;
+    background-color: rgba(91, 192, 222, 0.1);
 }
 
 .info strong {
-  color: #5bc0de;
+    color: #5bc0de;
 }
 
 .success {
-  border-left-color: #2b542c;
-  background-color: rgba(43, 84, 44, 0.1);
+    border-left-color: #2b542c;
+    background-color: rgba(43, 84, 44, 0.1);
 }
 
 .success strong {
-  color: #2b542c;
+    color: #2b542c;
 }
 
 .listening img{
@@ -171,7 +171,7 @@ p{
     color: white;
 }
 .red-toggle{
-  color: red;
+    color: red;
 }
 
 .moreSong{
@@ -183,13 +183,13 @@ p{
 /*Opacidad img artist disc*/
 
 img.opacityImg:hover{
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 /*artistas*/
 
 .artist{
-  margin-left: 2.5em;
+    margin-left: 2.5em;
 }
 
 .artist h2{
@@ -197,15 +197,15 @@ img.opacityImg:hover{
 }
 
 .moreArtist{
-  padding-left: 35.8em;
+    padding-left: 35.8em;
 }
 
 .artist img{
-  width: 10em;
+    width: 10em;
 }
 
 .secondArtist{
-  padding-top: 0.5em;
+    padding-top: 0.5em;
 }
 
 /*Discos*/
@@ -304,73 +304,73 @@ a.news-btn:hover {
 /*css listplay*/
 
 .listening{
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* formulario de comentarios*/
 .form-comment{
-  background-color: #4c4954;
-  border-radius: 5px;
-  padding:1em;
+    background-color: #4c4954;
+    border-radius: 5px;
+    padding:1em;
 }
 
 .input-group{
-  width: 100%;
+    width: 100%;
 }
 .pin{
-  background-color: white;
-  margin-top: 2em;
-  border-radius: 5px;
+    background-color: white;
+    margin-top: 2em;
+    border-radius: 5px;
 }
 .heart2{
-  padding-right: 1em;
+    padding-right: 1em;
 }
 .fa{
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 .user-comment{
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-  border:1px solid white;
-  display: inline-block;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border:1px solid white;
+    display: inline-block;
 }
 .hour-comment{
-  display: inline-block;
-  color: white;
+    display: inline-block;
+    color: white;
 }
 .name-comment{
-  display: inline-block;
-  padding-right: 7em;
-  color: white;
+    display: inline-block;
+    padding-right: 7em;
+    color: white;
 }
 
 .btnComment{
-  background: #7e4958 !important;
-  color: white;
-  border: none;
-  margin-top: 1em;
+    background: #7e4958 !important;
+    color: white;
+    border: none;
+    margin-top: 1em;
 }
 
 .btnComment:hover{
-  background: #161616 !important;
-  color: white;
+    background: #161616 !important;
+    color: white;
 }
 
 .btn-modi{
-  background: #7e4958 !important;
-  color: white;
-  border: none;
-  style:none;
+    background: #7e4958 !important;
+    color: white;
+    border: none;
+    style:none;
 }
 
 .btn-modi:hover{
-  background: #161616 !important;
-  color: white;
+    background: #161616 !important;
+    color: white;
 }
 
 .modal-body h1{
-  text-align: center;
+    text-align: center;
 }
 
 /*Splash*/
@@ -393,26 +393,26 @@ a.news-btn:hover {
 }
 
 iframe{
-  padding-top: 5em;
+    padding-top: 5em;
 }
 .carousel1{
-  background-image: url(../images/carousel1.jpg);
-  background-size: cover;
-  background-position: center;
+    background-image: url(../images/carousel1.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
 .carousel2{
-  background-image: url(../images/carousel2.jpg);
-  background-size: cover;
-  background-position: center;
+    background-image: url(../images/carousel2.jpg);
+    background-size: cover;
+    background-position: center;
 
 
 }
 .carousel3{
-  background-image: url(../images/carousel3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-image: url(../images/carousel3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 .title-carousel{
@@ -425,40 +425,40 @@ iframe{
 
 }
 .btn-eventos{
-  padding-top: 1em;
+    padding-top: 1em;
 }
 .paragraph-carousel{
-  color: #a58989;
-  font-size: 2em;
-  font-weight: bold;
+    color: #a58989;
+    font-size: 2em;
+    font-weight: bold;
 }
 .opacar{
-  background-color: rgba(0,0,0,0.5);
-  height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
 }
 .modal-click{
-  background-color: #493c42;
-  border: none;
+    background-color: #493c42;
+    border: none;
 }
 .info{
-  color:#515c73;
-  text-align: center;
+    color:#515c73;
+    text-align: center;
 }
 .lab-logo{
-  margin: 0;
-  font-size: 1.3em;
-  color: #a58989;
+    margin: 0;
+    font-size: 1.3em;
+    color: #a58989;
 }
 
 a{
-  text-decoration:none;
+    text-decoration:none;
 }
 .likes{
-  font-size: bolder;
+    font-size: bolder;
 }
 #user-name-perfil{
-  color: #FF87DC;
-  font-weight: bolder;
+    color: #FF87DC;
+    font-weight: bolder;
 }
 
 #splash h2{
@@ -474,13 +474,13 @@ a{
 
 /*Usuario*/
 .listening h2{
-  margin-left: -1.5em;
+    margin-left: -1.5em;
 }
 
-  .userImage{
-      width: 7em;
-      margin-left: 0.5em;
-      margin-top: 3em;
+.userImage{
+    width: 7em;
+    margin-left: 0.5em;
+    margin-top: 3em;
   }
 
 #user-name-perfil{
@@ -489,7 +489,7 @@ a{
 }
 
 .userText p{
-  margin-left: 25em;
+    margin-left: 25em;
 }
 
 /*--------------*/
@@ -515,7 +515,7 @@ a{
     height: 100vh;
 }
 .title-carousel{
-  font-size: 3em;
+    font-size: 3em;
 
 }
 }
