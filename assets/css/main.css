@@ -160,7 +160,7 @@ p{
 }
 
 .listening h2{
-    padding-left: 2.3em;
+    padding-left: 2.6em;
 }
 
 .textSong{
@@ -191,40 +191,74 @@ img.opacityImg:hover{
 /*artistas*/
 
 .artist{
-    padding-left: 5em;
+  margin-left: 2.5em;
 }
 
 .artist h2{
     padding-left: 0.5em;
 }
 
-.artist img{
-    width: 10em;
-    margin-top: 0.5em;
-}
-
 .moreArtist{
   padding-left: 35.8em;
 }
 
+.artist img{
+  width: 10em;
+}
+
+.secondArtist{
+  padding-top: 0.5em;
+}
+
 /*Discos*/
+/*Noticias*/
 
-.disc{
-    padding-left: 5em;
+.news-section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: white;
+    border-radius: 5px;
+    width: 40em;
 }
 
-.disc h2{
-    padding-left: 0.5em;
+a.news-btn {
+    color: #000;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #008e10;
+    color: #FFF;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-left: 18em;
+}
+a.news-btn:hover {
+    background: #161616;
 }
 
-.disc img{
-    width: 10em;
-    margin-top: 1em;
+.news-column h4 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    padding: 0.8em 0 0.3em;
+    margin: 0;
+    text-align: center;
+}
+.news-column p {
+    color: #777;
+    line-height: 1.7em;
+    padding: 0.1em 0 0em;
+    display: block;
+    font-size: 1em;
 }
 
-.moreDisc{
-    padding-left: 36em;
+.news-column img{
+    margin-left: 2.3em;
+    width: 500px;
 }
+/*Fin noticias*/
 
 /*Amigos y sugerencias*/
 
@@ -391,7 +425,7 @@ iframe{
 }
 
   .userImage{
-      margin-left: 4em;
+      margin-left: 7em;
       margin-top: 5em;
   }
 
@@ -408,11 +442,19 @@ iframe{
 /*Artistas*/
 
 .artist{
-    margin-left: -7em;
+    margin-left: -2.7em;
 }
 
-.disc{
-    margin-left: -7em;
+.artist h2{
+    text-align: center;
+}
+
+.imgLeft{
+    margin-right: 2.5em;
+}
+
+.imgRight{
+    margin-left: 2.5em;
 }
 
 .carousel-height{
