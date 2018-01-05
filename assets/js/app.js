@@ -42,7 +42,7 @@ function register(){
   var errorCode = error.code;
   var errorMessage = error.message;
   // ...
-  alert("la contraseña debe ser de 6 dígitos / mail incorrecto e inicie sesión");
+  alert("la contraseña debe ser de 6 dígitos / mail incorrecto");
   console.log(errorCode);
   console.log(errorMessage);
 });
@@ -130,6 +130,7 @@ function observador(){
     var nameTitle= $("#name-user-user").val().toUpperCase();
   $("#user-name-perfil").html(nameTitle);
   $("#name-user2").html(nameTitle);
+  $(".concert-container").toggleClass("hidden-xs");
  
 
 $(".heart").click(function(){
