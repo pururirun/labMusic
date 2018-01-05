@@ -5,6 +5,10 @@ $(document).ready(function(){
       $('#splash').fadeOut(100);
    }, 3000);
 });
+  $(".btn-eventos").click(function(){
+    $(".concert").toggleClass("hidden-xs");
+    $(".carousel-hidden").toggleClass("hidden-xs");
+  });
 });
 
 
