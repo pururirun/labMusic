@@ -1,12 +1,9 @@
-body{
-    background-color: #3d3637;
-}
-html{
-   overflow-x: hidden;
+h1, h3, p{
+   color: #a58989;
 }
 
-h2, p, a{
-   color: #a57076;
+h2, a{
+  color: #7e4958;
 }
 
 .userImg{
@@ -36,7 +33,7 @@ h2, p, a{
 
 
 body{
-    background-color: #241A1A;
+    background-color: #212121;
     font-family: 'Montserrat', sans-serif;
 }
 html{
@@ -82,12 +79,13 @@ html{
 }
 
 .userImage{
-    width: 13em;
+    width: 11em;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    margin-top: 2em;
+    margin-top: 0.5em;
     border: 5px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
 }
 
 .userText{
@@ -177,7 +175,7 @@ p{
 }
 
 .moreSong{
-    padding-left: 76em;
+    padding-left: 32em;
 }
 
 /*Fin canciones recientes*/
@@ -227,7 +225,7 @@ a.news-btn {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    background: #008e10;
+    background: #7e4958;
     color: #FFF;
     padding: 0.5em 1em;
     border-radius: 0.5em;
@@ -311,16 +309,18 @@ a.news-btn:hover {
 
 /* formulario de comentarios*/
 .form-comment{
-  background-color: grey;
+  background-color: #4c4954;
+  border-radius: 5px;
   padding:1em;
-
 }
+
 .input-group{
   width: 100%;
 }
 .pin{
   background-image: url(../images/concerttt.jpg);
   margin-top: 2em;
+  border-radius: 5px;
 }
 .heart2{
   padding-right: 1em;
@@ -337,12 +337,41 @@ a.news-btn:hover {
 }
 .hour-comment{
   display: inline-block;
+  color: white;
 }
 .name-comment{
   display: inline-block;
   padding-right: 7em;
+  color: white;
 }
 
+.btnComment{
+  background: #7e4958 !important;
+  color: white;
+  border: none;
+  margin-top: 1em;
+}
+
+.btnComment:hover{
+  background: #161616 !important;
+  color: white;
+}
+
+.btn-modi{
+  background: #7e4958 !important;
+  color: white;
+  border: none;
+  style:none;
+}
+
+.btn-modi:hover{
+  background: #161616 !important;
+  color: white;
+}
+
+.modal-body h1{
+  text-align: center;
+}
 
 /*Splash*/
 
@@ -391,12 +420,12 @@ iframe{
     padding-left: 2em;
     margin: 0;
     font-size: 5em;
-    color: #FF7113;
+    color: #7e4958;
     font-weight: bolder;
 
 }
 .paragraph-carousel{
-  color: #FFB64D;
+  color: #a58989;
   font-size: 2em;
   font-weight: bold;
 }
@@ -405,15 +434,17 @@ iframe{
   height: 100%;
 }
 .modal-click{
-  background-color: #5C5C5C;
+  background-color: #493c42;
+  border: none;
 }
 .info{
-  color:#a57076;
+  color:#515c73;
+  text-align: center;
 }
 .lab-logo{
   margin: 0;
   font-size: 1.3em;
-  color: orange;
+  color: #a58989;
 }
 /*----------------------------------------------------------------------------------------------*/
 @media (min-width: 200px) and (max-width:768px){
@@ -425,8 +456,9 @@ iframe{
 }
 
   .userImage{
-      margin-left: 7em;
-      margin-top: 5em;
+      width: 7em;
+      margin-left: 0.5em;
+      margin-top: 1em;
   }
 
 #user-name-perfil{
@@ -435,7 +467,7 @@ iframe{
 }
 
 .userText p{
-  margin-left: 15em;
+  margin-left: 25em;
 }
 
 /*--------------*/
