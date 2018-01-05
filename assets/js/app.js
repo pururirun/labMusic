@@ -92,9 +92,7 @@ function out(){
   $(".artist").toggleClass("hidden");
   $(".disc").toggleClass("hidden");
   $(".listening").toggleClass("hidden");
-  var name= $("#name-user").val();
-  $("#name-user").html(name);
-  $("#user-name-perfil").html(name);
+
 
 $(".heart").click(function(){
   $(this).toggleClass("red-toggle");
@@ -129,9 +127,10 @@ function observador(){
   $(".artist").toggleClass("hidden");
   $(".disc").toggleClass("hidden");
   $(".listening").toggleClass("hidden");
-  var name= $("#name-user").val();
-  $("#name-user1").html(name);
-  $("#user-name-perfil").html(name);
+    var nameTitle= $("#name-user-user").val().toUpperCase();
+  $("#user-name-perfil").html(nameTitle);
+  $("#name-user2").html(nameTitle);
+ 
 
 $(".heart").click(function(){
   $(this).toggleClass("red-toggle");
