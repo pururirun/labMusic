@@ -459,12 +459,16 @@ a{
 #user-name-perfil{
   color: #FF87DC;
   font-weight: bolder;
-
-
-.splashText{
-    color: #a58989;
-
 }
+
+#splash h2{
+    color: #a58989;
+}
+
+.friendFollow{
+    color: #a58989;
+}
+
 /*----------------------------------------------------------------------------------------------*/
 @media (min-width: 200px) and (max-width:768px){
 
@@ -477,12 +481,12 @@ a{
   .userImage{
       width: 7em;
       margin-left: 0.5em;
-      margin-top: 1em;
+      margin-top: 3em;
   }
 
 #user-name-perfil{
     font-size: 25px;
-    margin-left: 8.5em;
+    margin-left: 14em;
 }
 
 .userText p{
