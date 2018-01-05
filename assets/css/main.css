@@ -329,6 +329,58 @@ img.opacityImg:hover{
     margin-top: 5em;
 }
 
+iframe{
+  padding-top: 5em;
+}
+.carousel1{
+  background-image: url(../images/carousel1.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.carousel2{
+  background-image: url(../images/carousel2.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+}
+.carousel3{
+  background-image: url(../images/carousel3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.title-carousel{
+    padding-top: 2em;
+    padding-left: 2em;
+    margin: 0;
+    font-size: 5em;
+    color: #FF7113;
+    font-weight: bolder;
+
+}
+.paragraph-carousel{
+  color: #FFB64D;
+  font-size: 2em;
+  font-weight: bold;
+}
+.opacar{
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+}
+.modal-click{
+  background-color: #5C5C5C;
+}
+.info{
+  color:#a57076;
+}
+.lab-logo{
+  margin: 0;
+  font-size: 1.3em;
+  color: orange;
+}
 /*----------------------------------------------------------------------------------------------*/
 @media (min-width: 200px) and (max-width:768px){
 

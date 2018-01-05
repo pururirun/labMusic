@@ -149,7 +149,7 @@ $(document).ready(function(){
 
 
  for(i=0; i<concertData.length;i++){
-  $(".row-concert").append("<div class='col-lg-3'><div class='thumbnail modal-click'>"+concertData[i].photo+"<div class='caption'><h3>"+concertData[i].name+"</h3><p>"+concertData[i].date+"</p><p></p></div></div></div>");
+  $(".row-concert").append("<div class='col-lg-3'><div class='thumbnail modal-click'>"+concertData[i].photo+"<div class='caption info'><h3>"+concertData[i].name+"</h3><p>"+concertData[i].date+"</p><p></p></div></div></div>");
  }
 
 $(".modal-click").click(function(){ //al hacer click en el contenedor de las fotos
@@ -199,8 +199,6 @@ function savePin(){
 });
 
 };
-
-
 
 
 //Splash
