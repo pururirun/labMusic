@@ -52,7 +52,7 @@ function verificar(){
 
 user.sendEmailVerification().then(function() {
   // Email sent.
-  alert("Confirme el mail en su correo");
+  alert("Confirme el mail en su correo y luego inicie sesión");
   console.log("enviando correo");
 }).catch(function(error) {
   // An error happened.
@@ -236,11 +236,10 @@ function savePin(){
   var name= $("#name-user").val();
   $("#descripcionInput").val("");
   $("#urlInput").val("");
-  $("#name-user").val("");
+  var name2= $("#name-user2").val();
 
 
-
-  $("#pines").append("<div class='pin col-lg-6 col-lg-offset-3'><img class='user-comment' src='assets/images/raccoon.jpg'><h2 class='name-comment'>"+name+"</h2><h4 class='hour-comment'>"+new Date().toLocaleTimeString()+"</h4><p>"+descripcion+"<a href='#' class='thumbnail'><img src='"+url+"'></a></p><span class='fa fa-heart heart2'></span><span class='fa fa-trash'></span></div>")
+  $("#pines").append("<div class='pin col-lg-6 col-lg-offset-3'><img class='user-comment' src='assets/images/raccoon.jpg'><h2 class='name-comment'>"+name2+"</h2><h4 class='hour-comment'>"+new Date().toLocaleTimeString()+"</h4><p>"+descripcion+"<a href='#' class='thumbnail'><img src='"+url+"'></a></p><span class='fa fa-heart heart2'></span><span class='fa fa-trash'></span></div>")
     //este es el frente
 
   $(".heart2").click(function(){
