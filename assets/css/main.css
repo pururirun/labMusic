@@ -449,6 +449,7 @@ iframe{
   font-size: 1.3em;
   color: #a58989;
 }
+
 a{
   text-decoration:none;
 }
@@ -458,6 +459,11 @@ a{
 #user-name-perfil{
   color: #FF87DC;
   font-weight: bolder;
+
+
+.splashText{
+    color: #a58989;
+
 }
 /*----------------------------------------------------------------------------------------------*/
 @media (min-width: 200px) and (max-width:768px){
