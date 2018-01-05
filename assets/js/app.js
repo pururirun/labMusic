@@ -35,12 +35,14 @@ function register(){
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then(function(){
     verificar();
+
   })
   .catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
   // ...
+  alert("la contraseña debe ser de 6 dígitos / mail incorrecto e inicie sesión");
   console.log(errorCode);
   console.log(errorMessage);
 });
@@ -50,6 +52,7 @@ function verificar(){
 
 user.sendEmailVerification().then(function() {
   // Email sent.
+  alert("Confirme el mail en su correo");
   console.log("enviando correo");
 }).catch(function(error) {
   // An error happened.
@@ -65,6 +68,7 @@ function ingreso(){
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
+  alert("Error en mail o contraseña");
 
 
 
