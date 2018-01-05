@@ -129,65 +129,6 @@
   </div>
 
 
-
-<div class="row">
-      <div class="col-lg-12 hidden-lg hidden-xs">
-          <div class="col-lg-6">
-              <h2>Amigos</h2>
-              <div class="media friend1">
-                  <a class="pull-left" href="#">
-                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
-                  </a>
-                  <div class="media-body">
-                      <h4 class="media-heading">Juan Perez <br><small>Chile</small></h4>
-                      <hr style="margin:8px auto">
-                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
-                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
-                  </div>
-              </div>
-              <div class="media friend2">
-                  <a class="pull-left" href="#">
-                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
-                  </a>
-                  <div class="media-body">
-                      <h4 class="media-heading">Pepito<br><small>Chile</small></h4>
-                      <hr style="margin:8px auto">
-                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
-                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-6">
-              <h2>Sugerencias</h2>
-              <div class="media friend3">
-                  <a class="pull-left" href="#">
-                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
-                  </a>
-                  <div class="media-body">
-                      <h4 class="media-heading">Froppy<br><small>Chile</small></h4>
-                      <hr style="margin:8px auto">
-                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
-                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
-                  </div>
-              </div>
-              <div class="media friend4">
-                  <a class="pull-left" href="#">
-                      <img class="imagen media-object dp img-circle" src="assets/images/raccoon.jpg" style="width: 100px;height:100px;">
-                  </a>
-                  <div class="media-body">
-                      <h4 class="media-heading">Meh<br><small>Chile</small></h4>
-                      <hr style="margin:8px auto">
-                      <button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
-                      <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
-                  </div>
-              </div>
-          </div>
-      </div>
-</div>
-
-
-
-
 <!--header visto por el usuario-->
 <header class="userHeader hidden">
   <nav class="navbar navbar-inverse no-margin">
@@ -262,16 +203,31 @@
 <!--Fin usuario-->
 
 <!--likes-->
-<div class="row hidden-xs">
+
+
+
+<div class="row hidden likes">
+
   <div class="col-lg-12">
-      <p class="col-md-offset-3 col-lg-1 col-xs-3"><a href="#">Canciones</a><br><strong>2,590</strong></p>
+      <p class="col-md-offset-4 col-lg-1 col-xs-3"><a href="#">Canciones</a><br><strong>2,590</strong></p>
       <p class="col-lg-1 col-xs-3"><a href="#">Artistas</a><br><strong>150</strong></p>
       <p class="col-lg-1 col-xs-3"><a href="#">Favoritos</a><br><strong>23</strong></p>
-      <p class="col-lg-1 col-xs-3"><a href="#">Amigos</a><br><strong>2</strong></p>
+      <p class="col-lg-1 col-xs-3" id="friends"><a href="#">Amigos</a><br><span  id="follow">9</span></p>
   </div>
 </div>
 
 <!--Amigos y sugerencias-->
+<div class="row hidden click-friends container text-center">
+          <div class="col-lg-6 friends-data">
+              <h2>Amigos</h2>
+              
+            </div>
+              
+          <div class="col-lg-6 text-center suggestion-data">
+              <h2>Sugerencias</h2>
+              
+          </div>
+</div>
 
 
 <!--canciones recientes-->
@@ -541,6 +497,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/data.js"></script>
+    <script type="text/javascript" src="assets/js/friends.js"></script>
+    <script type="text/javascript" src="assets/js/sugerencia.js"></script>
 
   </body>
 </html>
