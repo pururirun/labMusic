@@ -1,4 +1,13 @@
 /* Inicio firebase registro e inicio*/
+$(document).ready(function(){
+  $(function(){
+   setTimeout(function() {
+      $('#splash').fadeOut(100);
+   }, 3000);
+});
+});
+
+
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE) //esto es para que se borre el usuario activo cada vez que inicio sesion
   .then(function() {
     // Existing and future Auth states are now persisted in the current
@@ -232,14 +241,10 @@ function savePin(){
    $(".fa-trash").click(function(){
   $(this).parent().remove();
 });
-
+   
 };
 
 
-//Splash
 
-$(function(){
-   setTimeout(function() {
-      $('#splash').fadeOut(100);
-   }, 3000);
-});
+
+

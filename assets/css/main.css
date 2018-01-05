@@ -376,7 +376,7 @@ a.news-btn:hover {
 /*Splash*/
 
 #splash{
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -496,6 +496,10 @@ a{
 }
 
 .carousel-height{
-    height: 30vh;
+    height: 100vh;
+}
+.title-carousel{
+  font-size: 3em;
+
 }
 }
