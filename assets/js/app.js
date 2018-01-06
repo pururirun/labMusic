@@ -85,35 +85,6 @@ function ingreso(){
 };
 
 
-function out(){
-  firebase.auth().signOut().then(function(){
-    console.log("saliendo..")
-    $(document).ready(function(){
-
-  $('#modalLogin').modal('toggle');
-  $(".likes").toggleClass("hidden");
-  $(".post-music").toggleClass("hidden");
-  $(".joinHeader").toggleClass("hidden");
-  $(".carousel-hidden").toggleClass("hidden");
-  $(".concert").toggleClass("hidden");
-  $(".userHeader").toggleClass("hidden");
-  $(".backgroundUser").toggleClass("hidden");
-  $(".artist").toggleClass("hidden");
-  $(".disc").toggleClass("hidden");
-  $(".listening").toggleClass("hidden");
-
-
-$(".heart").click(function(){
-  $(this).toggleClass("red-toggle");
-
-
-});
-});
-  })
-  .catch(function(error){
- console.log(error);
-  })
-};
 
 
 function observador(){
@@ -129,8 +100,8 @@ function observador(){
   $(".likes").toggleClass("hidden");
   $(".post-music").toggleClass("hidden");
   $(".joinHeader").toggleClass("hidden");
-  $(".carousel-hidden").toggleClass("hidden");
-  $(".concert").toggleClass("hidden");
+  $(".carousel-hidden").toggle();
+  $(".concert").toggle();
   $(".userHeader").toggleClass("hidden");
   $(".backgroundUser").toggleClass("hidden");
   $(".artist").toggleClass("hidden");
@@ -168,6 +139,24 @@ $(".heart").click(function(){
 }
 observador();
 
+function out(){
+  firebase.auth().signOut().then(function(){
+    console.log("saliendo..")
+    $(document).ready(function(){
+
+  location.reload(); //recargo la página nuevamente
+
+$(".heart").click(function(){
+  $(this).toggleClass("red-toggle");
+
+
+});
+});
+  })
+  .catch(function(error){
+ console.log(error);
+  })
+};
 
 /*final firebase*/
 
@@ -208,10 +197,16 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
   
  for(var j=0;j<friends.length;j++){
   $(".friends-data").append("<div class='media friend1 center-block'><a class='pull-left' href='#'>"+friends[j].photo+"</a><div class='media-body'><h4 class='media-heading'>"+friends[j].name+"<br><small class='country'>Chile</small></h4><hr style='margin:8px auto'><button type='button' class='btn delete-btn btn-circle'><i class='glyphicon glyphicon-remove'></i></button></div></div></div>");
-  
-
 
  };
+
+ for(var n=0; n<artist.length; n++){
+  $(".artist-data").append("<div class='col-lg-3 col-xs-6 sinpadding secondArtist'><a href='#''><img class='opacityImg imgRight' src='"+artist[n].photo+"'></a></div>");
+ };
+ for(var m=0; m<disc.length; m++){
+  $(".disc-data1").append("<div class='col-lg-3 col-xs-6 sinpadding secondArtist'><a href='#'><img class='opacityImg imgRight' src='"+disc[m].photo+"'></a></div>");
+ };
+
  $(".delete-btn").click(function(){
     $(this).parent().parent().remove();
   var counter = parseInt($("#follow").text());
