@@ -207,12 +207,12 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
  });
   
  for(var j=0;j<friends.length;j++){
-  $(".friends-data").append("<div class='media friend1 center-block'><a class='pull-left' href='#'>"+friends[j].photo+"</a><div class='media-body'><h4 class='media-heading'>"+friends[j].name+"<br><small>Chile</small></h4><hr style='margin:8px auto'><button type='button' class='btn btn-danger btn-circle'><i class='glyphicon glyphicon-remove'></i></button></div></div></div>");
+  $(".friends-data").append("<div class='media friend1 center-block'><a class='pull-left' href='#'>"+friends[j].photo+"</a><div class='media-body'><h4 class='media-heading'>"+friends[j].name+"<br><small class='country'>Chile</small></h4><hr style='margin:8px auto'><button type='button' class='btn delete-btn btn-circle'><i class='glyphicon glyphicon-remove'></i></button></div></div></div>");
   
 
 
  };
- $(".btn-danger").click(function(){
+ $(".delete-btn").click(function(){
     $(this).parent().parent().remove();
   var counter = parseInt($("#follow").text());
     counter--;
@@ -220,10 +220,10 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
 
    });
  for(var k=0;k<suggestion.length;k++){
-  $(".suggestion-data").append("<div class='media friend1 center-block'><a class='pull-left' href='#'>"+suggestion[k].photo+"</a><div class='media-body'><h4 class='media-heading'>"+suggestion[k].name+"<br><small>Chile</small></h4><hr style='margin:8px auto'><button type='button' class='btn btn-success btn-circle'><i class='glyphicon glyphicon-ok'></i></button></div></div></div>");
+  $(".suggestion-data").append("<div class='media friend1 center-block'><a class='pull-left' href='#'>"+suggestion[k].photo+"</a><div class='media-body'><h4 class='media-heading'>"+suggestion[k].name+"<br><small class='country'>Chile</small></h4><hr style='margin:8px auto'><button type='button' class='btn follow-btn'>Seguir<i class='glyphicon glyphicon-ok'></i></button></div></div></div>");
   
  };
-  $(".btn-success").click(function(){
+  $(".follow-btn").click(function(){
     $(this).parent().parent().remove();
     var counter = parseInt($("#follow").text());
     counter++;

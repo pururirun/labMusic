@@ -153,12 +153,12 @@ p{
     color: #f0ad4e;
 }
 
-.info {
+.info2 {
     border-left-color: #5bc0de;
     background-color: rgba(91, 192, 222, 0.1);
 }
 
-.info strong {
+.info2 strong {
     color: #5bc0de;
 }
 
@@ -195,6 +195,7 @@ p{
 .moreSong{
     padding-left: 32em;
 }
+
 
 /*Fin canciones recientes*/
 
@@ -314,7 +315,25 @@ a.news-btn:hover {
     margin-left: 1em;
     color: #a57076;
 }
-
+.friend1{
+    background-color: #554949;
+    border-radius: 1.5em;
+    color: #a57076;
+    border-color: grey; 
+    font-weight: bolder;
+    padding: 1em;
+}
+.country{
+    color: white;
+}
+.delete-btn{
+    background-color: #a57076;
+    color: white;
+}
+.follow-btn{
+    background-color: #a57076;
+    color: white;
+}
 .playIcon{
     margin-left: 1em;
 }
@@ -331,7 +350,10 @@ a.news-btn:hover {
     border-radius: 5px;
     padding:1em;
 }
-
+.text-comment{
+    padding-top: 10em;
+    padding-bottom: 5em;
+}
 .input-group{
     width: 100%;
 }
