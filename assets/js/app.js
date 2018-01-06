@@ -10,7 +10,16 @@ $(document).ready(function(){
     $(".carousel-hidden").toggleClass("hidden-xs");
   });
 });
-
+// Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyC22mFKPcAuTplW2UFW0WDRlKKl8tlkjJY",
+      authDomain: "labmusic2632.firebaseapp.com",
+      databaseURL: "https://labmusic2632.firebaseio.com",
+      projectId: "labmusic2632",
+      storageBucket: "labmusic2632.appspot.com",
+      messagingSenderId: "269825170037"
+      };
+      firebase.initializeApp(config);
 
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE) //esto es para que se borre el usuario activo cada vez que inicio sesion
   .then(function() {
@@ -162,7 +171,7 @@ observador();
 
 /*final firebase*/
 
-
+/* Función para los modales de conciertos próximos.*/
 
 $(document).ready(function(){
 
@@ -178,8 +187,8 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
     if (thisPhoto == concertData[i].name) { // si el alt de la foto es igual al nombre entonces...
       $(".modal-titles").empty(); //borramos el titulo anterior
       $(".modal-bodys").empty();
-      $(".modal-titles").html(concertData[i].name); // agregamos el nuevo nombre
-      $(".modal-bodys").append(concertData[i].photo+"<h4>Lugar :"+concertData[i].place+"</h4>");
+      $(".modal-titles").html(concertData[i].name+"<span class='fa fa-calendar'></span>"); // agregamos el nuevo nombre
+      $(".modal-bodys").append(concertData[i].photo+"<h4>Lugar :"+concertData[i].place+"</h4><h4>Fecha :"+ concertData[i].date+"</h4><p class='text-justify'>"+concertData[i].description+"</p>");
 
     };
 

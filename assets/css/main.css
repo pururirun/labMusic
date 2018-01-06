@@ -27,6 +27,24 @@ h2, a{
     color: white;
 }
 
+/*Modal Concert*/
+.background-modal{
+    background-color: #212121;
+    color: #a58989;
+    padding: 1em;
+}
+.modal-titles{
+    font-weight: bolder;
+    font-size: 2em;
+    color: #951249;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.fa-calendar{
+    padding-left: 1em; 
+    color: #a58989;
+}
+
 
 /* USER PROFILE PAGE */
 
