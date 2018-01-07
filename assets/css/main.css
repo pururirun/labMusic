@@ -351,7 +351,6 @@ a.news-btn:hover {
     padding:1em;
 }
 .text-comment{
-    padding-top: 10em;
     padding-bottom: 5em;
 }
 .input-group{
@@ -377,7 +376,7 @@ a.news-btn:hover {
 }
 .hour-comment{
     display: inline-block;
-    color: white;
+    color: black;
 }
 .name-comment{
     display: inline-block;
@@ -507,6 +506,17 @@ a{
 
 .friendFollow{
     color: #a58989;
+}
+.name-comment{
+    color: #B15353 !important ;
+}
+#chatUl{
+    background-color: grey;
+    height: 70vh;
+    overflow-y: scroll;
+    border: 3px white solid;
+    list-style: none;
+    margin-top: 5em; 
 }
 
 /*----------------------------------------------------------------------------------------------*/

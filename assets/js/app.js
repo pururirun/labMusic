@@ -69,7 +69,6 @@ user.sendEmailVerification().then(function() {
 });
 };
 
-
 function ingreso(){
   var email2 = document.getElementById("email2").value;
   var password2= document.getElementById("password2").value;
@@ -79,13 +78,8 @@ function ingreso(){
   var errorMessage = error.message;
   alert("Error en mail o contraseña");
 
-
-
 });
 };
-
-
-
 
 function observador(){
   firebase.auth().onAuthStateChanged(function(user) {
@@ -94,7 +88,6 @@ function observador(){
     // User is signed in.
     var user= user;
   if(user.emailVerified){
-
 
   $('#modalLogin').modal('toggle');
   $(".likes").toggleClass("hidden");
@@ -111,7 +104,7 @@ function observador(){
   $("#user-name-perfil").html(nameTitle);
   $("#name-user2").html(nameTitle);
   $(".concert-container").toggleClass("hidden-xs");
- 
+  $(".chat-firebase").toggleClass("hidden");
 
 $(".heart").click(function(){
   $(this).toggleClass("red-toggle");
@@ -133,8 +126,6 @@ $(".heart").click(function(){
     console.log("No existe usuario activo");
   }
 });
-
-
 
 }
 observador();
@@ -163,8 +154,6 @@ $(".heart").click(function(){
 /* Función para los modales de conciertos próximos.*/
 
 $(document).ready(function(){
-
-
  for(i=0; i<concertData.length;i++){
   $(".row-concert").append("<div class='col-lg-3'><div class='thumbnail modal-click'>"+concertData[i].photo+"<div class='caption info'><h3>"+concertData[i].name+"</h3><p>"+concertData[i].date+"</p><p></p></div></div></div>");
  }
@@ -180,7 +169,6 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
       $(".modal-bodys").append(concertData[i].photo+"<h4>Lugar :"+concertData[i].place+"</h4><h4>Fecha :"+ concertData[i].date+"</h4><p class='text-justify'>"+concertData[i].description+"</p>");
 
     };
-
 };
 
 });
@@ -192,6 +180,7 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
   $(".friendList").toggleClass("hidden");
   $(".disc").toggleClass("hidden");
   $(".click-friends").toggleClass("hidden");
+  $(".chat-firebase").toggleClass("hidden");
 
  });
   
@@ -227,35 +216,38 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
 
   });
 });
-var idPin=0;
 
-$(document).ready(function(){
+/*CHAT EN TIEMPO REAL*/
+  var txtName = document.getElementById("name-user-user");
+  var txtMessage = document.getElementById("descripcionInput");
+  var btnEnviar = document.getElementById("btnEnviar");
+  var chatUl = document.getElementById("chatUl");
 
+btnEnviar.addEventListener("click",function(){
+  var name2 = txtName.value;
+  var description = txtMessage.value;
+  
+   firebase.database().ref('chat').push({
+    name:name2,
+    message: description
+   });
 });
 
-function savePin(){
-  var titulo = $("#tituloInput").val();
-  var descripcion = $("#descripcionInput").val();
-  var url = $("#urlInput").val();
-  var name= $("#name-user").val();
-  $("#descripcionInput").val("");
-  $("#urlInput").val("");
-  var name2= $("#name-user2").val();
-
-
-  $("#pines").append("<div class='pin col-lg-6 col-lg-offset-3'><img class='user-comment' src='assets/images/raccoon.jpg'><h2 class='name-comment'>"+name2+"</h2><h4 class='hour-comment'>"+new Date().toLocaleTimeString()+"</h4><p>"+descripcion+"<a href='#' class='thumbnail'><img src='"+url+"'></a></p><span class='fa fa-heart heart2'></span><span class='fa fa-trash'></span></div>")
-    //este es el frente
-
+firebase.database().ref('chat').on('value',function(snapshot){
+  var html = '';
+  snapshot.forEach(function(e){
+  var element = e.val();
+  var name2 = element.name;
+  var descripcion = element.message;
+  html += "<li><div class='pin col-lg-6 col-lg-offset-3'><img class='user-comment' src='assets/images/raccoon.jpg'><h2 class='name-comment'>"+name2+"</h2><h4 class='hour-comment'></h4><p>"+descripcion+"</a></p><span class='fa fa-heart heart2'></span><span class='fa fa-trash'></span></div><li>";
+  
+  });
+  chatUl.innerHTML = html;
   $(".heart2").click(function(){
   $(this).toggleClass("red-toggle");
 });
    $(".fa-trash").click(function(){
   $(this).parent().remove();
 });
-   
-};
-
-
-
-
+});
 
