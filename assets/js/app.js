@@ -130,24 +130,6 @@ $(".heart").click(function(){
 }
 observador();
 
-function out(){
-  firebase.auth().signOut().then(function(){
-    console.log("saliendo..")
-    $(document).ready(function(){
-
-  location.reload(); //recargo la página nuevamente
-
-$(".heart").click(function(){
-  $(this).toggleClass("red-toggle");
-
-
-});
-});
-  })
-  .catch(function(error){
- console.log(error);
-  })
-};
 
 /*final firebase*/
 
@@ -212,18 +194,18 @@ $(".modal-click").click(function(){ //al hacer click en el contenedor de las fot
     var counter = parseInt($("#follow").text());
     counter++;
     $("#follow").text(counter);
-
-
   });
 });
+$(document).ready(function(){
 
+});
 /*CHAT EN TIEMPO REAL*/
   var txtName = document.getElementById("name-user-user");
   var txtMessage = document.getElementById("descripcionInput");
-  var btnEnviar = document.getElementById("btnEnviar");
+  var btnEnviar1 = document.getElementById("btnEnviar1");
   var chatUl = document.getElementById("chatUl");
 
-btnEnviar.addEventListener("click",function(){
+  btnEnviar1.addEventListener('click',function(){
   var name2 = txtName.value;
   var description = txtMessage.value;
   
@@ -233,7 +215,8 @@ btnEnviar.addEventListener("click",function(){
    });
 });
 
-firebase.database().ref('chat').on('value',function(snapshot){
+firebase.database().ref('chat')
+.on('value',function(snapshot){
   var html = '';
   snapshot.forEach(function(e){
   var element = e.val();
@@ -251,3 +234,17 @@ firebase.database().ref('chat').on('value',function(snapshot){
 });
 });
 
+/*función para log out*/
+function out(){
+  firebase.auth().signOut().then(function(){
+    console.log("saliendo..");
+    $(document).ready(function(){
+
+  location.reload(); //recargo la página nuevamente
+
+});
+})
+  .catch(function(error){
+ console.log(error);
+  });
+};

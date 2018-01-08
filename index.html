@@ -122,14 +122,12 @@
       </div>
     </div>
   </div>
-
-
-<!--header visto por el usuario-->
+    <!--header visto por el usuario-->
   <header class="userHeader hidden">
     <nav class="navbar navbar-inverse no-margin">
       <div class="container">
-        <div class="navbar-header  hidden-xs">
-          <div class="navbar-header">
+        <div class="navbar-header">
+          <div class="navbar-header hidden-xs">
             <button type="button" class="navbar-toggle collapsed btn-hamburger" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -141,19 +139,18 @@
             <h2 class="lab-logo">LabMusic <span class="glyphicon glyphicon-headphones"></span></h2>
           </a>
         </div>
-        <div class="container hidden-xs">
+        <div class="container">
           <div id="navbar" class="navbar-collapse collapse  navbar-right nav-top">
             <ul class="nav navbar-nav">
-              <li><a class="btn" data-toggle="modal" id="start">Inicio</a></li>
+              <li><a class="btn" data-toggle="modal">Inicio</a></li>
               <li><a class="btn" data-toggle="modal">Música</a></li>
               <li><a class="btn" data-toggle="modal">Eventos</a></li>
               <li>
                 <div class="dropdown">
                   <button class=" userBtn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span>
-                      <img class="userImg" src="assets/images/raccoon.jpg">
-                    </span>
+                  <span><img class="userImg" src="assets/images/raccoon.jpg"></span>
                   </button>
+              
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a id="name-user2" href="#">Nombre de usuario</a></li>
                     <li><a href="#">Notificaciones</a></li>
@@ -165,24 +162,11 @@
             </ul>
           </div>
         </div>
-        <div class="phoneMenu dropdown hidden-lg">
-          <button class=" userBtn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            <span><img class="userImg" src="assets/images/raccoon.jpg"></span>
-          </button>
-          <ul class="dropdown-menu collapse " aria-labelledby="dropdownMenu1">
-            <li><a id="name-user2" href="#">Nombre de usuario</a></li>
-            <li><a href="#">Notificaciones</a></li>
-            <li><a href="#">Configuración</a></li>
-            <li><a onclick="out()" href="#">Salir</a></li>
-          </ul>
-        </div>
       </div>
     </nav>
   </header>
-<!--Fin header-visto-por-el-usuario-->
-
-<!--perfil usuario-->
-
+  <!--Fin header-visto-por-el-usuario-->
+  <!--perfil usuario-->
   <div class="backgroundUser hidden">
       <div class="row">
           <div class="col-lg-12 col-xs-12">
@@ -217,10 +201,7 @@
           <h2>Sugerencias</h2>
       </div>
   </div>
-
-
-<!--canciones recientes-->
-
+  <!--canciones recientes-->
   <div class="listening hidden row">
       <div class="col-xs-12 col-lg-6">
           <h2>Canciones recientes</h2>
@@ -255,12 +236,11 @@
                   <div class="input-group">
                       <textarea id="descripcionInput" type="text" class="form-control" placeholder="Comenta aqui!!" aria-describedby="descripcion"></textarea>
                   </div>
-                  <button class="btn btnComment btn-default" id="btnEnviar">Comentar</button>
+                  <button class="btn btnComment btn-default" id="btnEnviar1">Comentar</button>
               </form>
           </div>
       </div>
   </section>
-
 <!--Artistas desde data-->
   <div class="artist hidden row">
       <div class="col-lg-12 artistt">
